@@ -1,4 +1,5 @@
 import dotenv from "dotenv";
+import { configService } from "./config.service";
 dotenv.config();
 
 interface KnexConfig {
@@ -29,7 +30,7 @@ const knexConfig: KnexConfig = {
   staging: {
     client: "pg",
     connection: {
-      connectionString: process.env.STAGING_DATABASE_URL,
+      connectionString: configService.getDBUrl(),
       ssl: {
         rejectUnauthorized: false,
       },
