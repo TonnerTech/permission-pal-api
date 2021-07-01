@@ -50,7 +50,7 @@ const knexConfig: KnexConfig = {
   production: {
     client: "pg",
     connection: {
-      connectionString: process.env.DATABASE_URL,
+      connectionString: configService.getDBUrl(),
       ssl: {
         rejectUnauthorized: false,
       },

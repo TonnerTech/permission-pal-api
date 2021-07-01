@@ -23,6 +23,10 @@ class ConfigService {
   public getDBUrl() {
     return this.getValue("DATABASE_URL");
   }
+
+  public getJwtSecret() {
+    return this.getValue("JWT_SECRET");
+  }
 }
 
 const configService = new ConfigService(process.env);
