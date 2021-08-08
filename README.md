@@ -64,7 +64,7 @@ Api for permission pal
 
 Accepts:
 
-```json
+```
 {
   role: string,           -- example: "teacher"
   username: string,       -- must be unique -- required
@@ -78,7 +78,7 @@ Accepts:
 
 Returns:
 
-```json
+```
 {
   id: number,
   username: string,
