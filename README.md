@@ -2,7 +2,7 @@
 
 Api for permission pal
 
-## Base Url:
+## Base Url: https://permission-pal.herokuapp.com
 
 ---
 
